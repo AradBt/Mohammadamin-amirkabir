@@ -52,3 +52,21 @@
 
 </body>
 </html>
+<table>
+    <caption>عدد یک تا ده</caption>
+    <tbody>
+        <?php
+        for ($row = 1; $row <= 2; $row++) {
+            echo "<tr>";
+            for ($col = 1; $col <= 5; $col++) {
+                $number = ($row - 1) * 5 + $col;
+                echo "<td>$number</td>";
+            }
+            echo "</tr>";
+        }
+        ?>
+    </tbody>
+</table>
+
+</body>
+</html>
