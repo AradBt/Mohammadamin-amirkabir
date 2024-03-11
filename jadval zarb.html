@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +18,9 @@
     </style>
 </head>
 <body>
+
+
+<p style="text-align: center;">این جدول یک جدول ضرب است که برای یادگیری و انجام عملیات‌های ریاضی به آن احتیاج دارید.</p>
 
 <table>
     <caption>جدول ضرب</caption>
@@ -42,25 +45,11 @@
             echo "<tr>";
             echo "<td>$i</td>";
             for ($j = 1; $j <= 10; $j++) {
-                echo "<td>" . ($i * $j) . "</td>";
-            }
-            echo "</tr>";
-        }
-        ?>
-    </tbody>
-</table>
-
-</body>
-</html>
-<table>
-    <caption>عدد یک تا ده</caption>
-    <tbody>
-        <?php
-        for ($row = 1; $row <= 2; $row++) {
-            echo "<tr>";
-            for ($col = 1; $col <= 5; $col++) {
-                $number = ($row - 1) * 5 + $col;
-                echo "<td>$number</td>";
+                if ($i == 2 && $j == 5) {
+                    echo "<td><strong>" . ($i * $j) . "</strong></td>";
+                } else {
+                    echo "<td>" . ($i * $j) . "</td>";
+                }
             }
             echo "</tr>";
         }
